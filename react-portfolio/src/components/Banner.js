@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/Profile_pic.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -56,9 +56,17 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Toussaint`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>{`Hi! I'm Toussaint Gilbert`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Marketer", "Sales Representative" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Hello! My name is Toussaint, and I'm thrilled to welcome you to my portfolio. I'm an 18-year-old
+                    aspiring computer scientist
+                    born on March 7th, 2005, in the vibrant city of Chicago. Growing up in the dynamic neighborhood of
+                    Lincoln Park, I was inspired
+                    by my mother, a strong businesswoman who owns a successful salon in our community. Her determination
+                    and entrepreneurial spirit
+                    have influenced my own pursuit of excellence.</p>
+                    <a href="#connect">
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </a>
               </div>}
             </TrackVisibility>
           </Col>
