@@ -40,7 +40,7 @@ export const Projects = () => {
     },
     {
       title: "Space Invaders",
-      description: "Space Invaders video game inspired by the original.",
+      description: "Space Invaders video game inspired by the",
       imgUrl: projImg6,
     },
   ];
