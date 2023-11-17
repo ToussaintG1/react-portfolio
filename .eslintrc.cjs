@@ -11,11 +11,20 @@ module.exports = {
   },
  
   "parserOptions": {
+    requireConfigFile: false,
+    babelOptions: {
+      babelrc: false,
+      configFile: false,
+      // your babel options
+      presets: ["@babel/preset-env"],
       "ecmaVersion": 2018,
       "sourceType": "module",
       "ecmaFeatures": {
           "jsx": true
       }
+  },
+  babelOptions: {
+    configFile: "path/to/config.js",
   },
   "settings": {
       "react": {
