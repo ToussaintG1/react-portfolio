@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Toussaint Gilbert`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Marketer", "Sales Representative" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Hello! My name is Toussaint, and I'm thrilled to welcome you to my portfolio. I'm an 18-year-old
+                <h1>{`Hi! I'm Toussaint Gilbert`} <span className="txt-rotate" data-rotate='[ "Web Developer", "Marketer", "Sales Representative" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Hello! My name is Toussaint, and Im thrilled to welcome you to my portfolio. Im an 18-year-old
                     aspiring computer scientist
                     born on March 7th, 2005, in the vibrant city of Chicago. Growing up in the dynamic neighborhood of
                     Lincoln Park, I was inspired
@@ -80,6 +80,7 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
+      {index}
     </section>
   )
 }
